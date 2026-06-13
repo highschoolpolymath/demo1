@@ -1,0 +1,26 @@
+import random
+a=random.randint(1000,9999)
+d=list(str(a))
+
+for m in range(7):
+    e=0
+    b=input("enter a 4 digit number")
+    c=list(str(b))
+    for i in range(4):
+        for f in range(4):
+            if c[i]==d[f]:
+                if c[i]==d[i]:
+                        print("C")
+                        e=e+1
+                        break
+                else:
+                    print("f")
+                    break
+        else:
+            print('-')
+                    
+                     
+    if e==4:
+        print("you got the correct number")
+        break
+print(a)
